@@ -22,10 +22,23 @@
 </p>
 <h2>1. Mean, Mode, Mediana</h2>
 <p>
-  Mean value is current milleage devided by days spent (not only logged).
+  Mean value is an average mileage I drive daily, in average. Note that usually extremum values are not included, but I let them matter to average.
+  Trimmed mean is average daily milage without counting 10% of each extremum mileage (e.g. trims 1 highest and one lowest mileage from 10), and you can observe that trimmed mean is closer to median.
+  Median is central tendency measure, which better represents daily mileage and not so driven by extremum values.
 </p>
 <div>
   <img src="mean-01.png"/>
+</div>
+Lets now say I drive on weekdays more for important things, but on weekend I drive more for fun. Lets assume that priority is 85% / 15%.
+Weighted average in this case will show what average milleage I spend for important things (greater than common average, as weekend drive is usualy not intensive).
+<div>
+  <img src="mean-02.png"/>
+</div>
+<p>
+  Quartiles shows how the mileage is distributed above and below the median.
+</p>
+<div>
+  <img src="qualtiles-01.png"/>
 </div>
 </body>
 </html>
