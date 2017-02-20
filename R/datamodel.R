@@ -20,7 +20,7 @@ get_daily_delta <- function(mileageData) {
   return(dailyDelta)
 }
 
-get_normalized_daily_mileage<- function(mileageData) {
+get_normalized_daily_mileage <- function(mileageData) {
   datesRange <- get_full_dates_range(mileageData)
   mileageData$dailyDelta <- get_daily_delta(mileageData)
   normalized <- merge(data.frame(dateCol=datesRange), mileageData, by.x = "dateCol", by.y = "dateCol", all.x = TRUE)
