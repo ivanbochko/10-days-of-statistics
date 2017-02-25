@@ -21,3 +21,5 @@ source("R/quartile1.R")
 source("R/stdeviation1.R")
 
 source("R/mean_future0.R")
+
+source("R/distributions.R")
